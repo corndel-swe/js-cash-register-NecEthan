@@ -2,7 +2,15 @@
  * Given a list of recipes, return the number of vegetarian recipes in the list
  */
 function countVeggies(recipes) {
+  let count = 0;
   // code here
+  for (let recipe of recipes) {
+    if (recipe.isVegetarian) {
+      count++
+    }
+  }
+
+  return count
 }
 
 // array provided for debugging:

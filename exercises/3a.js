@@ -3,7 +3,11 @@
  * in the array
  */
 function lastRecipe(recipeBook) {
-  // code here
+  if (recipeBook.recipes.length > 0) {
+    return recipeBook.recipes[recipeBook.recipes.length - 1].name;
+  } else {
+    return undefined;
+  }
 }
 
 // we've provided a sample object for debugging:
