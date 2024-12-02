@@ -3,7 +3,12 @@
  * the name of each recipe
  */
 function listNames(recipes) {
+  let list = [];
   // code here
+  for (let recipe of recipes) {
+    list.push(recipe.name)
+  }
+  return list;
 }
 
 // array provided for debugging:
